@@ -17,7 +17,7 @@ import numpy as np
 
 def main():
 
-	#list of symbols
+	#list of symbols of companies
 	ls_symbols = ['BRCM', 'ADBE', 'AMD', 'ADI']
 	
 	#start and end dates 
