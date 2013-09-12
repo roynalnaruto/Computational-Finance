@@ -96,7 +96,7 @@ def simulate(dt_start, dt_end, ls_symbols, ls_alloc):
 	#calculate daily value for portfolio
 	na_rets = [sum(na_close_port[i]) for i in range(len(na_close_port))]
 
-  #calculate daily returns for portfolio
+  	#calculate daily returns for portfolio
 	na_rets_port = tsu.returnize0(na_rets)
 
 	#calculate cumulative return of portfolio
@@ -111,7 +111,7 @@ def simulate(dt_start, dt_end, ls_symbols, ls_alloc):
 	#calculate sharpe ratio for portfolio
 	sharpe = np.sqrt(252)*avg_daily_returns/stddev
 
-  #return 4 values
+  	#return 4 values
 	return(avg_daily_returns, cum_return_port, stddev, sharpe)
 
 
